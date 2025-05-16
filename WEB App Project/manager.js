@@ -10,12 +10,30 @@ const quizData = {
     {corect: 2}, //8
     {corect: 1}, //9
     {corect: 3}, //10
+  ],
+  "steag1" : [
+    {corect: 2}, //1
+    {corect: 1}, //2
+    {corect: "japonia"}, //3
+    {corect: "turcia"}, //4
+    {corect: 3}, //5
+    {corect: "malta"}, //6
+    {corect: 4}, //7
+    {corect: 1}, //8
+    {corect: "chile"}, //9
+    {corect: "senegal"}, //10
+    {corect: 2}, //11
+    {corect: 4}, //12
+    {corect: 2}, //13 
+    {corect: 1}, //14
+    {corect: 3}, //15
+    {corect: 4}, //16
   ]
 }
 
 const nrQuestions = {
   "mate1" : 10,
-  "steag1" : 12,
+  "steag1" : 16,
 }
 
 const intrebari = document.getElementById("intrebari");
@@ -29,6 +47,11 @@ const buton_final = document.querySelector(".buton_final");
 
 let corecte = 0;
 console.log(quizId);
+
+sir_intrebari.forEach((question) => {
+  question.style.display = "none";
+})
+sir_intrebari[0].style.display = "block";
 
 sir_intrebari.forEach((question, i) => {
   const type = question.id;
@@ -91,8 +114,38 @@ sir_intrebari.forEach((question, i) => {
         buton_final.style.display = "block";
         buton_final.addEventListener("click", () => {
           window.location.href = "index.html";
-        })
+        });
       }
     });
+  }else if(type === "scris"){
+    const variante = question.querySelector(".variante");
+    const raspuns_input = variante.querySelector(".raspuns_input");
+    const verifButton = variante.querySelector(".check");
+
+    verifButton.addEventListener("click", ()=> {
+      const raspuns_corect = quizData[quizId][i].corect;
+      if(raspuns_input.value.toLowerCase() === raspuns_corect){
+        corecte++;
+        const text_bun = question.querySelector(".feedback_bun");
+        text_bun.classList.add("vizibil");
+      }else{
+        const text_rau = question.querySelector(".feedback_rau");
+        text_rau.classList.add("vizibil");
+      }
+      raspuns_input.disabled = true;
+
+      if(i+1<sir_intrebari.length){
+        setTimeout(() => {
+          sir_intrebari[i+1].style.display="block";
+        }, 500);
+      }else{
+        feedback_final.textContent = `Felicitari! Ai raspuns corect la ${corecte}/${nrQuestions[quizId]}`;
+        feedback_final.style.display = "block";
+        buton_final.style.display = "block";
+        buton_final.addEventListener("click", () => {
+          window.location.href = "index.html";
+        });
+      }
+    })
   }
 })
