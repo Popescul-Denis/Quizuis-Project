@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizuis | Steaguri1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<div>
+  <div class="nav_bar">
+    <img src="LogoQuizuis.png" width="100px" height="100px">
+    <h2 id="title">Quizuis</h2>
+  </div>
+  <p class="enunt_question">Alege tara corecta pentru fiecare steag</p>
+  <div class="questions_container" id="intrebari">
+    <div class="question_container" id="choice" data-index="0">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="300px" height="180px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">Spania</button>
+        <button class="alegere" data-valoare="2">Germania</button>
+        <button class="alegere" data-valoare="3">Brazilia</button>
+        <button class="alegere" data-valoare="4">China</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="choice" data-index="1">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">UK</button>
+        <button class="alegere" data-valoare="2">USA</button>
+        <button class="alegere" data-valoare="3">Irlanda</button>
+        <button class="alegere" data-valoare="4">Australia</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="scris" data-index="2">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante" style="justify-content: center;">
+        <input type="text" class="raspuns_input" required  autocomplete="off">
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect! E Japonia</p>
+        <p class="feedback_rau">&cross; Gresit! E Japonia</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="scris" data-index="3">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="300px" height="200px" class="steag">
+      </div>
+      <div class="variante" style="justify-content: center;">
+        <input type="text" class="raspuns_input" required autocomplete="off">
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect! E Turcia</p>
+        <p class="feedback_rau">&cross; Gresit! E Turcia</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="choice" data-index="4">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCIdH-VI1hLl48PBzEBN0eg_JN50TGagcxuS4f4FsUwpORIaU_XNLYYvO1JDc&s=10" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">Anglia</button>
+        <button class="alegere" data-valoare="2">Ecuador</button>
+        <button class="alegere" data-valoare="3">Peru</button>
+        <button class="alegere" data-valoare="4">Coreea de Nord</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="scris" data-index="5">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="300px" height="200px" class="steag">
+      </div>
+      <div class="variante" style="justify-content: center;">
+        <input type="text" class="raspuns_input" required autocomplete="off">
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect! E Malta</p>
+        <p class="feedback_rau">&cross; Gresit! E Malta</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="choice" data-index="6">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">Andorra</button>
+        <button class="alegere" data-valoare="2">Monaco</button>
+        <button class="alegere" data-valoare="3">Louxembourg</button>
+        <button class="alegere" data-valoare="4">Liechtenstein</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="choice" data-index="7">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">Uzbekistan</button>
+        <button class="alegere" data-valoare="2">Tadjikistan</button>
+        <button class="alegere" data-valoare="3">Kazahstan</button>
+        <button class="alegere" data-valoare="4">Turkmenistan</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="scris" data-index="8">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante" style="justify-content: center;">
+        <input type="text" class="raspuns_input" required autocomplete="off">
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect! E Chile</p>
+        <p class="feedback_rau">&cross; Gresit! E Chile</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="scris" data-index="9">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante" style="justify-content: center;">
+        <input type="text" class="raspuns_input" required autocomplete="off">
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect! E Senegal</p>
+        <p class="feedback_rau">&cross; Gresit! E Senegal</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="choice" data-index="10">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">Polonia</button>
+        <button class="alegere" data-valoare="2">Indonesia</button>
+        <button class="alegere" data-valoare="3">Monaco</button>
+        <button class="alegere" data-valoare="4">Malta</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="choice" data-index="11">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">Gambia</button>
+        <button class="alegere" data-valoare="2">Croatia</button>
+        <button class="alegere" data-valoare="3">Olanda</button>
+        <button class="alegere" data-valoare="4">Paraguay</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="choice" data-index="12">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flag_of_the_Faroe_Islands.svg/1200px-Flag_of_the_Faroe_Islands.svg.png" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">Insulele Pastelui</button>
+        <button class="alegere" data-valoare="2">Insulele Feroe</button>
+        <button class="alegere" data-valoare="3">Finlanda</button>
+        <button class="alegere" data-valoare="4">Nicaragua</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="choice" data-index="13">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">Djibouti</button>
+        <button class="alegere" data-valoare="2">Namibia</button>
+        <button class="alegere" data-valoare="3">Rusia</button>
+        <button class="alegere" data-valoare="4">Somalia</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="choice" data-index="14">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS91E6z3WeR0OTbSY1x29oT15a9eAgbLnvlrtCuKjcGC0fd7Z05MYDvErLOnpQ3&s=10" alt="Steag {negru,rosu,galben} - verticala"
+        width="400px" height="200px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">Africa de Sud</button>
+        <button class="alegere" data-valoare="2">Sudan</button>
+        <button class="alegere" data-valoare="3">Sudanul de Sud</button>
+        <button class="alegere" data-valoare="4">Panama</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+    <div class="question_container" id="choice" data-index="14">
+      <div style="display: flex; margin-bottom: 40px; justify-content: center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_%C3%85land.svg" alt="Steag {negru,rosu,galben} - verticala"
+        width="300px" height="196px" class="steag">
+      </div>
+      <div class="variante">
+        <button class="alegere" data-valoare="1">Insulele Pastelui</button>
+        <button class="alegere" data-valoare="2">Norvegia</button>
+        <button class="alegere" data-valoare="3">Islanda</button>
+        <button class="alegere" data-valoare="4">Insulele Åland</button>
+        <button class="check">Verifica raspunsul</button>
+      </div>
+      <div class="feedback_container">
+        <p class="feedback_bun">&check; Corect!</p>
+        <p class="feedback_rau">&cross; Gresit!</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="display: flex; justify-content: center; margin-top: 40px;">
+    <h2 class="feedback_final" style="display: none;">Felicitari! Ai raspuns corect la </h>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <button class="buton_final" style="display: none;">Finalizeaza quiz-ul!</button>
+  </div>
+  <script src="manager.js"></script>
+</body>
+</html>
